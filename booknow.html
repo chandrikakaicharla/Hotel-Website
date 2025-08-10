@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Your Stay - HOTEL MY</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+    <section class="book-box">
+        <h2>🛏 Book Your Stay at HOTEL MY</h2>
+        <p class="intro-text">Fill in your booking details below and enjoy a luxurious stay with us.</p>
+
+        <!-- Booking Form -->
+        <form class="booking-form pastel-blue" onsubmit="confirmBooking(event)">
+            <label>Check-in Date:</label>
+            <input type="date" required>
+
+            <label>Room Number:</label>
+            <input type="number" placeholder="Enter Room Number" required>
+
+            <label>Number of Guests:</label>
+            <input type="number" min="1" max="10" required>
+
+            <label>Room Type:</label>
+            <select required>
+                <option value="">-- Select --</option>
+                <option value="ac">AC</option>
+                <option value="non-ac">Non-AC</option>
+            </select>
+
+            <label>Floor Number:</label>
+            <input type="number" min="1" max="10" required>
+
+            <label>Number of Days:</label>
+            <input type="number" min="1" max="30" required>
+
+            <label>Special Requests:</label>
+            <textarea placeholder="Any additional requests..."></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <!-- Success Message -->
+        <p id="booking-msg" class="hidden">🎉 Your room has been successfully booked! We look forward to welcoming you to HOTEL MY! 🏨✨</p>
+
+        <a href="project.html" class="home-btn">🏠 Back to Home</a>
+    </section>
+
+    <script>
+        function confirmBooking(e) {
+            e.preventDefault();
+            document.getElementById("booking-msg").classList.remove("hidden");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - HOTEL MY</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <section class="contact-box">
+        <h2>📩 Contact HOTEL MY</h2>
+        <p class="intro-text">We’d love to hear from you! Fill out the form below or reach us using the details provided.</p>
+
+        <!-- Contact Info -->
+        <div class="info-section pastel-yellow">
+            <p><strong>Email:</strong> info@hotelmy.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> A V N College Out Gate, Opposite Indian Bank, Visakhapatnam, Andhra Pradesh, 530001</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form pastel-blue" onsubmit="showMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Success Message -->
+        <p id="success-msg" class="hidden">✅ Message sent successfully!</p>
+
+        <a href="project.html" class="home-btn">🏠 Back to Home</a>
+    </section>
+
+    <script>
+        function showMessage(e) {
+            e.preventDefault();
+            document.getElementById("success-msg").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>

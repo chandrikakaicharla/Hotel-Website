@@ -1,0 +1,147 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fce3ec, #e3f6fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Main About Box */
+.about-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+.about-box h2 {
+    color: #ff6f61;
+    margin-bottom: 8px;
+}
+
+.intro-text {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* About Sections */
+.about-section {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    animation: fadeInUp 0.8s ease;
+}
+
+.about-section h3 {
+    margin-bottom: 8px;
+}
+
+.about-section p, 
+.about-section ul {
+    color: #333;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.about-section ul {
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin: 5px 0;
+}
+
+/* Pastel Backgrounds */
+.pastel-yellow {
+    background: #fff9e6;
+}
+
+.pastel-pink {
+    background: #ffe6eb;
+}
+
+.pastel-blue {
+    background: #e6f3ff;
+}
+
+.pastel-green {
+    background: #e7ffe6;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-links .instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.social-links .instagram:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.social-links .linkedin {
+    background: #0077b5;
+}
+
+.social-links .linkedin:hover {
+    background: #005582;
+    transform: scale(1.05);
+}
+
+/* Back Home Button */
+.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.03);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fce3ec, #e3f6fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Booking Box */
+.book-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+.book-box h2 {
+    color: #ff6f61;
+    margin-bottom: 8px;
+}
+
+.intro-text {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Pastel Background */
+.pastel-blue {
+    background: #e6f3ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+    color: #444;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    background: #f0f8ff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.booking-form input:hover,
+.booking-form select:hover,
+.booking-form textarea:hover {
+    background: #e0f0ff;
+    transform: scale(1.02);
+}
+
+.booking-form button {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.booking-form button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.03);
+}
+
+/* Success Message */
+#booking-msg {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: green;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Back Home Button */
+.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
