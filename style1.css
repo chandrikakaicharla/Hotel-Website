@@ -241,7 +241,7 @@ p{
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(_on.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('cta-bg.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -263,3 +263,4 @@ p{
     text-align: center;
 
 }
+
